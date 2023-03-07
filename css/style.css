@@ -257,7 +257,6 @@ h2{
     align-items: end;
     min-height: 5.5em;
     background-color: #23272a;
-    border-top: 2px solid #d3d3d3;
     width: 100%;
 }
 
@@ -284,12 +283,20 @@ li:first-child{
     /* width: 100px; */
     /* min-width: 56.25em; */
     min-width:75%;
-    min-height: 3.75em;
-    background-color: #7fffd4;
+    /* min-height: 3.75em; */
+    padding-top: 2em;
+    border-top: 3px solid white;
 }
 
 .h3f{
     display: block;
     font-size: 30px;
     color:#5c6fab ; 
+}
+.buttonFooter{
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    padding: .5em;
+    background-color:#8ea1e1; ;
 }
