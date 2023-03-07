@@ -1,0 +1,229 @@
+/* creare una boxed che da le dimensioini a tutta la pagina  */
+/* creare una sezione nel css con tutte delle classi generiche da riassegnare  */
+/* a piu elementi */ 
+/* come dimensioni degli elementi  */
+/* colori  */
+/* o text align ecc */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* qui do un background che sta nel retro del nav ed un padding */
+header{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+.BackNav{
+    padding: 1em;
+    width: 100%;
+    /* background-color:#add8e6 ; */
+    
+}
+
+.DisplayFlex{
+    display: flex;
+}
+/* qui la nav viene stilizzata e resa flex */
+.Nav{
+    font-size: 20px;
+    max-width: 56.25em;
+    margin: 0 auto;
+    /* background-color: #daa520; */
+    height: 2.1875em;
+    justify-content: space-between;
+}
+.logo{
+    padding: .5em;
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+}
+@media (max-width: 800px) {.link
+    {
+        display: none;
+    }
+}
+.linkHeader{
+    color: white;
+    text-decoration: none;
+}
+.login{
+    padding: .5em;
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.login > a{
+    border-radius: 30px;
+    background-color: white;
+    padding: 5% 7%;
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: medium;
+}
+.LinkBoxHeader{
+    padding: .5em;
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* inizio section */
+.DJA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HeadMain{
+    padding: 5%;
+    max-height: 23.5em;
+}
+/* contenuto della section precedentemente centrato */
+.contenuto1SecH{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+/* riprendere il metodo qui sopra per misure */
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.headpcontainer{
+    padding: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.HeadButton{
+    font-size: 20px;
+    margin: 30px;
+    padding: 1em;
+    border-radius: 30px;
+    border: 0px;
+}
+.HeadButton:first-child{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.HeadButton:last-child{
+    background-color: #23272a;
+    color: white;
+}
+
+/* dispongo il main in colonne */
+.AColonne{
+    flex-flow: column nowrap;
+    height: 131em;
+    background-color: #ffffff;
+}
+/* assegno lo sfondo piu scuro con la classe grey */
+.grey{
+    background-color: #d3d3d3;
+}
+/* qui divido le tre colonne con le stesse dimensioni in base */
+/* all'altezza totale del diiv assegnato */
+.Container{
+    min-height: calc((131em - 46em) / 3);
+}
+/* qui il contenuto suddiviso in 60% e 40% */
+.SessantaQuaranta{
+    display: flex;
+    /* min-width: 56.25em; */
+    min-width: 75%;
+    min-height: 23em;
+}
+
+/* assegno il 60% del container */
+.Sessanta{
+    flex-basis: 60%;
+    background-color: #1e90ff;
+}
+/* assegno il 60% del container */
+.Quaranta{
+    background-color: #ffc0cb;
+    flex-basis: 40%;
+}
+/* quarta section */
+.Box.Quattro.Container{
+    min-height: 46em;
+}
+/* qui un container unico  */
+.Cento{
+    background-color: #228b22;
+    /* min-width: 56.25em;  */
+    min-width:75%;
+    min-height: 42em;
+}
+.footer1container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #23272a;
+    height:34em;
+}
+.boxfootermain{
+    display: flex;
+    margin: .5rem;
+    /* min-width: 56.25em; */
+    min-width:75%;
+    min-height: 29.3em;
+    /* background-color: #228b22; */
+}
+
+.Trenta{
+    max-height:29.3em ;
+    flex-basis: 30%;
+    background-color: #f08080;
+}
+
+.Settanta{
+    display: flex;
+    max-height:29.3em ;
+    flex-basis: 70%;
+    background-color: #3cff1e;
+}
+
+.UnQuarto{
+    flex-basis: 25%;
+    background-color: #20b2aa;
+    border: 1px solid black;
+}
+/* .UnQuarto.chiaro{
+    flex-basis: 25%;
+    background-color: rgb(0, 139, 76)
+} */
+
+.FootEndContainer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 5.5em;
+    background-color: #23272a;
+    border-top: 2px solid #d3d3d3;
+    width: 100%;
+}
+
+.FootEndBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100px; */
+    /* min-width: 56.25em; */
+    min-width:75%;
+    min-height: 3.75em;
+    background-color: #7fffd4;
+}
