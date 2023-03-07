@@ -50,6 +50,9 @@ header{
     color: white;
     text-decoration: none;
 }
+.linkHeader:hover{
+    text-decoration: underline;
+}
 .login{
     padding: .5em;
     display: flex;
@@ -64,6 +67,10 @@ header{
     color: #1e90ff;
     text-decoration: none;
     font-size: medium;
+}
+.login > a:hover{
+    -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
+    box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
 }
 .LinkBoxHeader{
     padding: .5em;
@@ -112,6 +119,7 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 .HeadButton{
     font-size: 20px;
     margin: 30px;
@@ -123,9 +131,18 @@ h1{
     color: rgb(0, 0, 0);
     background-color: white;
 }
+.HeadButton:first-child:hover{
+    color: #8ea1e1;
+    -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
+    box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
+}
 .HeadButton:last-child{
     background-color: #23272a;
     color: white;
+}
+.HeadButton:last-child:hover{
+    -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
+    box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
 }
 
 /* dispongo il main in colonne */
@@ -264,13 +281,11 @@ h2{
     border-radius: 30px;
     border: 0px;
     color: white;
+    background-color: #5a65ea;
+}
+.MainButton:hover{
     background-color: #8ea1e1;
 }
-/* .UnQuarto.chiaro{
-    flex-basis: 25%;
-    background-color: rgb(0, 139, 76)
-} */
-
 .FootEndContainer{
     display: flex;
     justify-content: center;
@@ -291,6 +306,9 @@ li{
     text-decoration: none;
     color: white;
 }
+.linkFooter:hover{
+    text-decoration: underline;
+}
 li:first-child{
     font-weight: 600;
     color:#5c6fab; 
@@ -302,7 +320,7 @@ li:first-child{
     justify-content: space-between;
     min-width:75%;
     padding-top: 2em;
-    border-top: 3px solid white;
+    border-top: 2px solid #5c6fab;
 }
 
 .h3f{
@@ -331,4 +349,14 @@ li:first-child{
 .bianchi{
     color: white;
     font-size: 20px;
+}
+
+.bianchi:hover{
+    font-size: 30px;
+
+}
+
+.buttonFooter:hover{
+    -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
+    box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
 }
