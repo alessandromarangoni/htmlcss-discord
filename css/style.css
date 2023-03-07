@@ -42,7 +42,7 @@ header{
     flex-basis: 20%;
     align-items: center;
 }
-@media (max-width: 800px) {.link
+@media (max-width: 800px) {.linkHeader
     {
         display: none;
     }
@@ -89,6 +89,11 @@ header{
     flex-direction: column;
     max-width: 60%;
 }
+@media screen and (max-width: 900px){
+    .contenuto1SecH{
+        max-width: 90%;
+    }
+    }
 /* riprendere il metodo qui sopra per misure */
 h1{
     font-size: 50px;
@@ -138,6 +143,8 @@ h1{
 /* all'altezza totale del diiv assegnato */
 .Container{
     min-height: calc((131em - 46em) / 3);
+    max-width: 1400px;
+    overflow: hidden;
 }
 /* qui il contenuto suddiviso in 60% e 40% */
 .SessantaQuaranta{
@@ -152,6 +159,16 @@ h1{
     flex-basis: 60%;
     /* background-color: #1e90ff; */
 }
+@media screen and (max-width: 900px){
+.svg60{
+    max-width: 100%;
+}
+}
+@media screen and (max-width: 900px){
+    h2{
+        font-size: small;
+    }
+    }
 /* assegno il 60% del container */
 .Quaranta{
     /* background-color: #ffc0cb; */
@@ -163,7 +180,9 @@ h1{
 h2{
     font-size: 40px;
 }
-
+.pMain{
+    font-size: 20px;
+}
 /* quarta section */
 .Box.Quattro.Container{
     min-height: 46em;
