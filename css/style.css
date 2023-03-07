@@ -143,20 +143,27 @@ h1{
 .SessantaQuaranta{
     display: flex;
     /* min-width: 56.25em; */
-    min-width: 75%;
-    min-height: 23em;
+    max-width: 75%;
+    padding: 5%;
 }
 
 /* assegno il 60% del container */
 .Sessanta{
     flex-basis: 60%;
-    background-color: #1e90ff;
+    /* background-color: #1e90ff; */
 }
 /* assegno il 60% del container */
 .Quaranta{
-    background-color: #ffc0cb;
+    /* background-color: #ffc0cb; */
     flex-basis: 40%;
 }
+.SectionTitle{
+    padding: 15% 0;
+}
+h2{
+    font-size: 40px;
+}
+
 /* quarta section */
 .Box.Quattro.Container{
     min-height: 46em;
