@@ -27,6 +27,10 @@ header{
     display: flex;
 }
 /* qui la nav viene stilizzata e resa flex */
+p{
+    line-height: 1.5em!important;
+    
+}
 .Nav{
     font-size: 20px;
     max-width: 56.25em;
@@ -71,6 +75,7 @@ header{
 .login > a:hover{
     -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
     box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
+    font-size: large;
 }
 .LinkBoxHeader{
     padding: .5em;
@@ -134,7 +139,7 @@ h1{
 .HeadButton:first-child:hover{
     color: #8ea1e1;
     -webkit-box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86); 
-    box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
+    box-shadow: 2px 4px 15px 3px rgba(66, 77, 198, 0.86);
 }
 .HeadButton:last-child{
     background-color: #23272a;
@@ -274,6 +279,12 @@ h2{
 .UnQuarto{
     flex-basis: 25%;
 }
+.stelline{
+    padding: 2em;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .MainButton{
     font-size: 20px;
     margin: 30px;
@@ -286,6 +297,7 @@ h2{
 .MainButton:hover{
     background-color: #8ea1e1;
 }
+
 .FootEndContainer{
     display: flex;
     justify-content: center;
@@ -353,6 +365,7 @@ li:first-child{
 
 .bianchi:hover{
     font-size: 30px;
+    transition: .1s;
 
 }
 
