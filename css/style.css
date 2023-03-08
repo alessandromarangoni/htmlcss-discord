@@ -77,6 +77,37 @@ p{
     box-shadow: 2px 4px 15px 3px rgba(0,0,0,0.86);
     font-size: large;
 }
+.fa-solid{
+    color: white;
+}
+.listHeader{
+    align-self: center;
+}
+
+#ciao{
+    display: none;
+    margin-top: 100%;
+    background-color: #5a65ea;
+    border-radius: 5px;
+}
+#ciao a{
+    color: white;
+    text-decoration: none;
+}
+
+.listHeader:hover #ciao{
+    display: block;
+}
+@media screen and (max-width: 900px){
+    #ciao{
+        font-size: small;
+    }
+    }
+    @media screen and (min-width: 900px){
+        .listHeader{
+            display: none;
+        }
+        }
 .LinkBoxHeader{
     padding: .5em;
     display: flex;
@@ -111,6 +142,13 @@ h1{
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    }
 
 .headpcontainer{
     padding: 30px;
@@ -166,7 +204,12 @@ h1{
     position: relative;
     max-width: 1500px;
 } */
+@media screen and (max-width: 900px)
+{.ondine,.ondinereverse{
+    display: none;
+}
 
+}
 .ondinereverse{
     background-color: #F6F6F6;
     width: 1440px;
